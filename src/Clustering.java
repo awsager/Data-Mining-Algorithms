@@ -20,7 +20,8 @@ public class Clustering {
 	public static void main(String[] args){	
 		
 		try {
-			writer = new PrintWriter("C:\\Users\\Anthony\\Desktop\\CS\\eclipse workspace\\Testing\\src\\output.txt", "UTF-8");
+			//output file path
+			writer = new PrintWriter("CHANGE to output file path", "UTF-8");
 		} catch (FileNotFoundException e) {
 			System.out.println("Failed to create output file");
 			e.printStackTrace();
@@ -32,7 +33,6 @@ public class Clustering {
 		}
 		
 
-		writer.println("Exercise 7.2.3 by Anthony Sager, group 3");
 		writer.println();
 		writer.println("************************************************");
 		writer.println("*****  Results if using smallest radius  *******");
@@ -93,7 +93,8 @@ public class Clustering {
 		try { // startup, read points from file, every point begins as a cluster
 			Scanner sc = new Scanner(
 					new File(
-							"C:\\Users\\Anthony\\Desktop\\CS\\eclipse workspace\\Testing\\src\\file.txt"));
+							//enter input file name
+							"CHANGE to input file path"));
 			while (sc.hasNextLine()) {
 
 				List<Coordinate> inner = new ArrayList<Coordinate>();
